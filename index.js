@@ -1,4 +1,4 @@
-require('dotenv').config(); // Load environment variables from .env
+
 
 const express = require('express');
 const app = express();
@@ -27,8 +27,8 @@ app.post('/api/products', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
-const MONGODB_URI = process.env.MONGODB_URI;
+const PORT = 3000;
+const MONGODB_URI = 'mongodb+srv://anishnira3:<password>@cluster0.6rfq8fn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
