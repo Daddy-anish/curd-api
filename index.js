@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 const productRoute = require("./routes/product.route.js");
 const Product = require('./models/product.model.js');
+const cors = require('cors');
 app.use(cors());
 // Middleware
 app.use(express.json());
